@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_page"
+    tools:context=".LoginPage">
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/new_user"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/siginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Sign-In.Already a customer?"/>
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:background="@drawable/round_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/siginText"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:hint="Phone Number or Email" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/number"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:background="@drawable/round_button"
+        android:text="Login" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_below="@id/imageView"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/radio_group"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/new_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:textColor="#04091A"
+        android:layout_marginTop="20sp"
+        android:text="Do not have an Account ? SignIn" />
+
+
+</RelativeLayout>
